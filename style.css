@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 60vh;
+    width: 90vw;
+    background-color: blue;
+    position: relative;
+}
+.ball{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+    bottom: 0;
+    left: 0;
+    animation: animatex 3s linear infinite, animatey 1s ease-out infinite alternate;
+}
+@keyframes animatex {
+    form{
+        left: 0;
+    }
+    50%{
+        background-color: rgb(237, 244, 99);
+    }
+to {
+    left: 100%;
+}
+    }
+
+@keyframes animatey {
+    form{
+        bottom: 0;
+
+    }
+    50%{
+        /* background-color: rgb(233, 239, 121); */
+    }
+    to{
+        bottom: 100%;
+    }
+}
